@@ -1,0 +1,294 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  flex: 0 0 20%; 
+  background-color: rgb(47, 46, 46);
+  flex-direction: column;
+}
+
+.sidebar.hidden {
+  transform: translateX(-100%);
+}
+
+.sidebar.visible {
+  transform: translateX(0);
+}
+
+
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 25px;
+  margin-right: 60px;
+}
+
+/* button:hover {
+  background-color: #0056b3;
+} */
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(241, 238, 238);
+  background-color: rgb(131, 130, 130);
+  background-color: black;
+}
+
+
+.heading{
+  height: 10%;
+  width: 100%;  
+  display: flex;
+  align-items: center;
+  /* background-color: #50bfbf; */
+}
+
+.heading h1 {
+  font-size: 2rem; /* Adjust the font size */
+  font-weight: bold;
+  color: white;
+}
+
+.heading h1:hover{
+  cursor: pointer;
+}
+
+.heading h2 {
+  margin-left: auto;
+  font-size: 1.5rem; /* Adjust the font size if necessary */
+  color: white;
+}
+
+
+.boxes {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 30%;
+  background-color: #F0F0F0;
+}
+
+.box {
+  flex: 1;
+  height: 190px; /* Adjust height as needed */
+  margin: 10px; /* Adjust margin for spacing */
+  background-color: #F0F0F0;
+}
+
+.dropdown2{
+  margin-top: 10%;
+}
+
+.dropdown2 {
+  position: relative; /* Ensure the container can be positioned */
+}
+
+.dropdown2 .dropdown-toggle {
+  position: absolute; /* Position the button absolutely */
+  left: -100px; /* Adjust this value to move the button to the left */
+  right: auto; /* Prevent alignment to the right */
+}
+
+.dropdown2 .dropdown-menu {
+  width: 250px; 
+  max-height: 240px; 
+  overflow-y: hidden; 
+  overflow-x: hidden;
+}
+
+.dropdown2 .react-datepicker {
+  width: 100%;
+  display: block;
+}
+
+/* Adjust the top position for navigation arrows */
+.react-datepicker__navigation--previous,
+.react-datepicker__navigation--next {
+  top: -30px !important; /* Adjust as needed */
+  z-index: 1;
+}
+
+.react-datepicker__navigation--previous {
+  left: 5px !important; /* Ensure this positions correctly */
+}
+
+.react-datepicker__navigation--next {
+  right: -50px !important; /* Ensure this positions correctly */
+}
+
+.dropdown1{
+  margin-top: 100px;
+  position: relative;
+}
+
+.dropdown1 .rbt {
+  width: 100%;
+}
+
+/* Typeahead input styling */
+.rbt-input-main {
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.custom-typeahead .rbt-input-main {
+  background-color: #007bff;
+  color: white;
+}
+
+.custom-typeahead .rbt-input-main::placeholder {
+  color: white;
+}
+
+.rbt-menu {
+  width: 100%;
+}
+
+.rbt-menu .dropdown-item {
+  padding: 0.375rem 0.75rem;
+}
+
+.chart {
+  flex: 1;
+  /* height: 55%; */
+  /* background-color: #FFFBDA; */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.plotly-graph-div {
+  width: 100%; /* Ensure the chart fills the available width */
+  height: 100%; /* Ensure the chart fills the available height */
+}
+
+.footer {
+  width: 100%;
+  height: 5%;
+  background-color: black;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.footer-content p {
+  margin: 0;
+}
+
+.company-info {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+/* Styling for company names */
+.company-name {
+  font-size: 16px;
+  font-weight: bold;
+  
+}
+
+/* Styling for green color (positive change) */
+.green {
+  color: green;
+}
+
+/* Styling for red color (negative change) */
+.red {
+  color: red;
+}
+
+.tree-chart {
+  width: 100%;
+  height: 80vh; /* Adjust the height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buy-sell{
+  margin-left: 25px;
+}
+
+.buy-button{
+  background-color: green;
+}
+
+.sell-button{
+  background-color: red;
+}
+
+.place-order{
+  background-color: green;
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.sidebar-content > * {
+  margin-bottom: 10px;
+}
+
+.input-field {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.input-field + .input-field {
+  margin-top: 10px;
+}
+
+.button-container {
+  margin: 40px;
+  justify-content: space-around; /* Space between buttons */
+  align-items: center; /* Center align buttons vertically */
+  padding: 10px; /* Optional: Add padding for spacing around buttons */
+}
+
+.button-container button{
+  font-weight: bold;
+}
+
+
+
+
+
+
+

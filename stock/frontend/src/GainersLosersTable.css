@@ -1,0 +1,63 @@
+/* GainersLosersTable.css */
+
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: rgb(47, 46, 46);
+}
+
+.main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.heading {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 10px;
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.grid-item {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  color: white;
+  cursor: pointer;
+}
+
+.gainer {
+  background-color: green;
+}
+
+.loser {
+  background-color: red;
+}
+
+.footer {
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+}
+
+.chart-container {
+  margin-top: 20px;
+}
+
+h2{
+  color: white;
+}
